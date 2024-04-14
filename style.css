@@ -1,0 +1,79 @@
+body {
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 2em;
+}
+
+* {
+    font-family: "Press Start 2P", system-ui;;
+}
+
+#background {
+    width: fit-content;
+    height: 200px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    border-radius: 1em 1em 10px 10px;
+}
+
+#minuteur {
+    grid-column: 1 / span 3;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: rgb(6, 139, 6);
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    color: aliceblue;
+}
+
+#btn-start button, #btn-stop button, #btn-reset button{
+    background: green;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    justify-content: center;
+    border: 2px solid teal;
+    color: aliceblue;
+    width: 8rem;
+    height: 4rem;
+    align-items: center;
+    box-shadow: 0 4px 0 rgb(123, 190, 21);
+   
+
+}
+
+
+.duration-150 button {
+    transition-duration: 60ms;
+}
+.ease-linear button{
+    transition-timing-function: linear;
+}
+
+#btn-start button:active:hover, #btn-stop button:active:hover, #btn-reset button:active:hover {
+    transform: translateY(4px);
+    box-shadow: unset;
+}
+
+#btn-start, #btn-stop, #btn-reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
